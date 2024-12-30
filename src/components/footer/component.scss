@@ -1,0 +1,114 @@
+@import '../../color-variables.scss';
+.final-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 6px 6px 6px 6px $object-color;
+    padding: 0 5vw;
+
+
+    .footer-itens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 3px solid $object-color;
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            gap: 10px;
+            width: 40%;
+            height: 100%;
+            
+            padding: 5vh 0;
+
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            a:hover{
+                border-bottom: 3px solid $bg-primary-color;
+                transition: border 0.05s ease;
+                opacity: 0.8;
+            }
+
+            ul{
+                list-style: circle;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 70%;
+
+                
+            }
+            
+
+            .footer-logo{
+                width: 200px;
+            }
+
+            .rede-social{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                .social-logo{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            
+
+         
+        }
+    }
+
+    .final-line-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10px;
+        
+    }
+}
+
+@media (max-width:990px){
+    .final-footer{
+        height: 100vh;
+        text-align: center;
+        padding: 0 3vw;
+
+        .footer-itens{
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .column{
+                width: 100%;
+                border-bottom: 2px solid $object-color;
+                border-right: 0;
+            }
+        }
+    }
+}

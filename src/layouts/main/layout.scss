@@ -1,0 +1,18 @@
+@import '../../color-variables.scss';
+.nav-links{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+
+    a{
+        text-decoration: none;
+       
+    }
+
+    a:hover{
+        border-bottom: 3px solid $bg-primary-color;
+        transition: border 0.05s ease;
+        opacity: 0.8;
+    }
+    
+}

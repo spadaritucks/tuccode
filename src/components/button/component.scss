@@ -1,0 +1,34 @@
+@import '../../color-variables.scss';
+
+button{
+    max-width: 250px;
+    max-height: 50px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    
+
+    &.primary{
+        background-color:$bg-primary-color;
+        color: $secondary-color;
+    }
+
+    &.primary:hover{
+        background-color: blue;
+    }
+
+
+    &.secondary{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+    }
+
+    &.secondary:hover{
+        opacity: 0.6;
+    }
+
+
+
+
+}
