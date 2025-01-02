@@ -56,16 +56,16 @@
 
         .nav-links{
             width: 100%;
-            height: 80vh;
+            padding: 20px;
             z-index: 1000;
             position: absolute;
             top: -140px;
             opacity: 0;
-            background-color: $object-color;
+            background-color: $secondary-color;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+            align-items: flex-start;
+            justify-content: flex-start;
             transition: 0.5s ease-in-out;
         }
 

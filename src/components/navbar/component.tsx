@@ -20,6 +20,7 @@ export default function Navbar({ children }: NavbarProps) {
     const handleOpenMenu = () => {
         setOpen(!open);
     }
+    
 
     return (
         <nav className="nav-area">
