@@ -1,0 +1,79 @@
+@import '../../color-variables.scss';
+
+.catalogo-sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .div-catalogo{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        color: $secondary-color;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 0 5vw;
+
+        h1{
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        ul{
+            list-style: circle;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    }
+
+    .background-1{
+        background-image: url('../../../public/background\ \(4\).jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .background-2{
+        background-image: url('../../../public/background\ \(5\).jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .background-3{
+        background-image: url('../../../public/banner\ tecnologic.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .background-4{
+        background-image: url('../../../public/background\ \(2\).jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .background-5{
+        background-image: url('../../../public/background-blue-gradient.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media (max-width:990px) {
+    .catalogo-sections{
+
+        .div-catalogo{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+}
