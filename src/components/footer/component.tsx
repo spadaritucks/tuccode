@@ -17,7 +17,6 @@ export default function Footer() {
                     <ul className='footer-links'>
                         <li><a href="/projetos">Projetos</a></li>
                         <li><a href="/catalogo">Serviços</a></li>
-                        <li><a href="/contatos">Contato</a></li>
                     </ul>
                 </div>
                 <div className='column'>

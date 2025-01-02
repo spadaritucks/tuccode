@@ -14,7 +14,7 @@ export const Main: FC<{ children: ReactNode }> = ({ children }) => {
             <Navbar>
                 <a href="/projetos">Projetos</a>
                 <a href="/catalogo">Serviços</a>
-                <a href="/contato">Contato</a>
+               
             </Navbar>
             {children}
             <Footer />
