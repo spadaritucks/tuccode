@@ -15,9 +15,9 @@ export default function Footer() {
                 <div className="column">
                     <h2>Links</h2>
                     <ul className='footer-links'>
-                        <li><a href="">Clientes</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="/projetos">Projetos</a></li>
+                        <li><a href="/catalogo">Serviços</a></li>
+                        <li><a href="/contatos">Contato</a></li>
                     </ul>
                 </div>
                 <div className='column'>
@@ -30,9 +30,9 @@ export default function Footer() {
                     <h2>Contato</h2>
                     <div className='rede-social'>
 
-                        <a href=""><Image width={50} height={50} src={whatsapp} alt='' /></a>
-                        <a href=""><Image className='social-logo' src={instagram} alt='' /></a>
-                        <a href=""><Image className='social-logo' src={linkedin} alt='' /></a>
+                        <a href="https://wa.me/5511960599793"><Image width={50} height={50} src={whatsapp} alt='' /></a>
+                        <a href="https://www.instagram.com/tuc_codeoficial"><Image className='social-logo' src={instagram} alt='' /></a>
+                        <a href="https://www.linkedin.com/company/tuc-code-software-house-development-web/?viewAsMember=true"><Image className='social-logo' src={linkedin} alt='' /></a>
                     </div>
                 </div>
             </div>

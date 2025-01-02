@@ -12,9 +12,9 @@ export const Main: FC<{ children: ReactNode }> = ({ children }) => {
         <>
 
             <Navbar>
-                <a href="">Clientes</a>
-                <a href="">Serviços</a>
-                <a href="">Contato</a>
+                <a href="/projetos">Projetos</a>
+                <a href="/catalogo">Serviços</a>
+                <a href="/contato">Contato</a>
             </Navbar>
             {children}
             <Footer />

@@ -20,8 +20,8 @@ button{
 
 
     &.secondary{
-        border: 1px solid $primary-color;
-        color: $primary-color;
+        border: 1px solid $bg-primary-color;
+        color: $bg-primary-color;
     }
 
     &.secondary:hover{

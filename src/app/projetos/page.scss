@@ -1,0 +1,109 @@
+@import '../../color-variables.scss';
+
+.title-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../../../public/background-blue-gradient.jpeg');
+    
+    h1{
+        font-size: 64px;
+        color: $secondary-color;
+        margin-left: 40px;
+        font-weight: 700;
+        
+    }
+}
+
+.projetos-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    .projetos-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 20px;
+
+        .projeto-card{
+            width: 400px;
+            height: 350px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            box-shadow: 4px 4px 4px 4px $object-color;
+          
+
+            .projeto-image{
+                width: 400px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            h2{
+                font-size: 22px;
+                font-weight: 700;
+                margin-left: 5px;
+               
+            }
+
+            .projeto-information{
+                list-style: circle;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 8px;
+
+                .actions{
+                    display: flex;
+                    gap: 5px;
+                    .link-icon{
+                        width: 40px;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    .link-icon:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+              
+            }
+
+
+
+
+        }
+    }
+}
+
+@media (max-width:990px){
+    .projetos-section{
+        
+
+        .projetos-grid{
+            grid-template-columns: repeat(1, 1fr);
+
+            .projeto-card{
+                width: 350px;
+                height: 320px;
+
+                .projeto-image{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
