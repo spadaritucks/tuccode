@@ -22,6 +22,7 @@ import clientelogo3 from '../../public/logo-talentsrh.png'
 
 export default function Home() {
 
+
   return (
     <Main>
       <Carousel orientation="horizontal">
@@ -45,9 +46,12 @@ export default function Home() {
             <li>E-commerces ou Lojas Virtuais</li>
             <li>Sistemas Robustos Personalizados</li>
             <li>Aplicativos Personalizados</li>
+            
+            
           </ul>
           <Button buttonName="Faça o Seu Orçamento" variant="primary" type="button" />
         </div>
+
 
         <Image src={introductionImage} alt="Introduction-image" className="introduction-image" />
         
@@ -68,6 +72,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+     
     </Main>
   )
 }
