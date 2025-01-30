@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ReactNode, useState } from "react"
-import logo from '../../../public/logo tuccode + icon.png'
+import logo from '../../../public/Logo-tuccode-sem engrenagem.png'
 import hamburguer from '../../../public/hamburguer.png'
 import close from '../../../public/close.png'
 import './component.scss'

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import './component.scss'
-import logo from '../../../public/logo tuccode + icon.png'
+import logo from '../../../public/Logo-tuccode-sem engrenagem.png'
 import instagram from '../../../public/instagram rounded icon.png'
 import whatsapp from '../../../public/whatsapp rounded icon.png'
 import linkedin from '../../../public/linkedin.png'
