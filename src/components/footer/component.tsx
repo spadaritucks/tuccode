@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className='rede-social'>
 
                         <a href="https://wa.me/5511960599793"><Image width={50} height={50} src={whatsapp} alt='' /></a>
-                        <a href="https://www.instagram.com/tuc_codeoficial"><Image className='social-logo' src={instagram} alt='' /></a>
+                        <a href="https://www.instagram.com/tuccode_oficial"><Image className='social-logo' src={instagram} alt='' /></a>
                         <a href="https://www.linkedin.com/company/tuc-code-software-house-development-web/?viewAsMember=true"><Image className='social-logo' src={linkedin} alt='' /></a>
                     </div>
                 </div>
