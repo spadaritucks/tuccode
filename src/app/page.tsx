@@ -49,7 +49,9 @@ export default function Home() {
             
             
           </ul>
-          <Button buttonName="Faça o Seu Orçamento" variant="primary" type="button" />
+          <Button buttonName="Faça o Seu Orçamento" variant="primary" type="button" onClick={
+            window.location.href = 'https://wa.me/5511960599793'
+          } />
         </div>
 
 
