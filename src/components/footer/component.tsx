@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='final-line-footer'>
-                <p>© 2025 TUC CODE - Software House & Development Web – Todos os direitos reservados</p>
+                <p>TUC CODE - Software House & Development Web</p>
             </div>
         </footer>
     )
