@@ -37,7 +37,7 @@ export default function Home() {
 
       <section className="introduction-section">
         <div className="text-div">
-          <h1>O QUE A <span style={{color:"#0447ff", fontWeight: "700"}}>TUC CODE</span> OFERECE?</h1>
+          <h1>O QUE A <span style={{ color: "#0447ff", fontWeight: "700" }}>TUC CODE</span> OFERECE?</h1>
           <p>Na TUC CODE, somos especialistas em desenvolver soluções sob medida
             para ajudar negócios e profissionais a se destacarem no mundo digital</p>
           <ul className="serviços-list">
@@ -46,18 +46,18 @@ export default function Home() {
             <li>E-commerces ou Lojas Virtuais</li>
             <li>Sistemas Robustos Personalizados</li>
             <li>Aplicativos Personalizados</li>
-            
-            
+
+
           </ul>
           <Button buttonName="Faça o Seu Orçamento" variant="primary" type="button" onClick={
-            window.location.href = 'https://wa.me/5511960599793'
+            () => {window.location.href = 'https://wa.me5511960599793'}
           } />
         </div>
 
 
         <Image src={introductionImage} alt="Introduction-image" className="introduction-image" />
-        
-        
+
+
       </section>
 
       <section className="clientes-section">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-     
+
     </Main>
   )
 }
