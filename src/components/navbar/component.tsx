@@ -7,7 +7,7 @@ import hamburguer from '../../../public/hamburguer.png'
 import close from '../../../public/close.png'
 import './component.scss'
 import Link from "next/link";
-
+import { motion } from "motion/react"
 
 interface NavbarProps {
     children: ReactNode;

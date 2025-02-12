@@ -23,19 +23,30 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { motion } from "motion/react"
 
 export default function Projetos() {
 
     return (
         <Main>
-            <section className="title-section">
+            <motion.section
+                className="title-section"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+            >
                 <h1>Nossos Projetos</h1>
-            </section>
+            </motion.section>
 
             <section className="projetos-section">
-                <div className="projetos-grid">
+                <motion.div
+                    className="projetos-grid"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                >
                     <div className="projeto-card">
-                        
+
                         <Carousel orientation="horizontal">
                             <CarouselContent>
                                 <CarouselItem><Image src={imoogiImage2} className="projeto-image" alt="image01"></Image></CarouselItem>
@@ -57,14 +68,14 @@ export default function Projetos() {
 
                     </div>
                     <div className="projeto-card">
-                        
+
                         <Carousel orientation="horizontal">
                             <CarouselContent>
                                 <CarouselItem><Image src={anaclaudiasite1} className="projeto-image" alt="image01"></Image></CarouselItem>
                                 <CarouselItem><Image src={anaclaudiasite2} className="projeto-image" alt="image01"></Image></CarouselItem>
                                 <CarouselItem><Image src={anaclaudiasite3} className="projeto-image" alt="image01"></Image></CarouselItem>
                                 <CarouselItem><Image src={anaclaudiasite4} className="projeto-image" alt="image01"></Image></CarouselItem>
-                                
+
                             </CarouselContent>
                             <CarouselPrevious style={{ position: "absolute", left: "20px" }} />
                             <CarouselNext style={{ position: "absolute", right: "20px" }} />
@@ -78,7 +89,7 @@ export default function Projetos() {
                         </ul>
 
                     </div>
-                </div>
+                </motion.div>
             </section>
         </Main>
     )

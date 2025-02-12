@@ -18,25 +18,37 @@ import Button from "@/components/button/component"
 import clientelogo1 from '../../public/dragao.png'
 import clientelogo2 from '../../public/logo.png'
 import clientelogo3 from '../../public/logo-talentsrh.png'
-
+import { motion } from "motion/react"
 
 export default function Home() {
 
 
   return (
     <Main>
-      <Carousel orientation="horizontal">
-        <CarouselContent>
-          <CarouselItem><Image src={image1} alt="image01"></Image></CarouselItem>
-          <CarouselItem><Image src={image2} alt="image02"></Image></CarouselItem>
-          <CarouselItem><Image src={image3} alt="image03"></Image></CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious style={{ position: "absolute", left: "20px" }} />
-        <CarouselNext style={{ position: "absolute", right: "20px" }} />
-      </Carousel>
+      <motion.section
+        className="carousel-section"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+      >
+        <Carousel orientation="horizontal" >
+          <CarouselContent>
+            <CarouselItem><Image src={image1} alt="image01"></Image></CarouselItem>
+            <CarouselItem><Image src={image2} alt="image02"></Image></CarouselItem>
+            <CarouselItem><Image src={image3} alt="image03"></Image></CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious style={{ position: "absolute", left: "20px" }} />
+          <CarouselNext style={{ position: "absolute", right: "20px" }} />
+        </Carousel>
+      </motion.section>
 
       <section className="introduction-section">
-        <div className="text-div">
+        <motion.div
+          className="text-div"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
           <h1>O QUE A <span style={{ color: "#0447ff", fontWeight: "700" }}>TUC CODE</span> OFERECE?</h1>
           <p>Na TUC CODE, somos especialistas em desenvolver soluções sob medida
             para ajudar negócios e profissionais a se destacarem no mundo digital</p>
@@ -50,20 +62,32 @@ export default function Home() {
 
           </ul>
           <Button buttonName="Faça o Seu Orçamento" variant="primary" type="button" onClick={
-            () => {window.location.href = 'https://wa.me/5511960599793'}
+            () => { window.location.href = 'https://wa.me/5511960599793' }
           } />
-        </div>
+        </motion.div>
 
+        <motion.div
+          className="div-introduction-image"
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
 
-        <Image src={introductionImage} alt="Introduction-image" className="introduction-image" />
+        >
+          <Image src={introductionImage} alt="Introduction-image" className="introduction-image" />
+        </motion.div>
 
 
       </section>
 
       <section className="clientes-section">
         <h1>Nossos Clientes</h1>
-        <div className="clientes-container-grid">
-          <div className="cliente-div">
+        <motion.div
+          className="clientes-container-grid"
+          initial={{ opacity: 0, y: 120 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        >
+          <div className="cliente-div" >
             <Image className="cliente-logo" src={clientelogo1} alt="" />
           </div>
           <div className="cliente-div">
@@ -72,7 +96,7 @@ export default function Home() {
           <div className="cliente-div">
             <Image className="cliente-logo" src={clientelogo3} alt="" />
           </div>
-        </div>
+        </motion.div>
       </section>
 
 
