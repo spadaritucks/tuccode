@@ -94,28 +94,7 @@ export default function Projetos() {
 
                     </div>
 
-                    <div className="projeto-card">
-
-                        <Carousel orientation="horizontal">
-                            <CarouselContent>
-                                <CarouselItem><Image src={talentsrhImage} className="projeto-image" alt="image01"></Image></CarouselItem>
-                                <CarouselItem><Image src={talentsrhImage2} className="projeto-image" alt="image01"></Image></CarouselItem>
-                                <CarouselItem><Image src={talentsrhImage3} className="projeto-image" alt="image01"></Image></CarouselItem>
-                                <CarouselItem><Image src={talentsrhImage4} className="projeto-image" alt="image01"></Image></CarouselItem>
-
-                            </CarouselContent>
-                            <CarouselPrevious style={{ position: "absolute", left: "20px" }} />
-                            <CarouselNext style={{ position: "absolute", right: "20px" }} />
-                        </Carousel>
-                        <h2>Sistema de Recrutamento</h2>
-                        <ul className="projeto-information">
-                            <li><strong>Cliente : </strong>Talents RH - Consutoria </li>
-                            <li className="actions"><a href="/projetos/talents-rh"><Button buttonName="Ler Mais" type="button" variant="secondary" /></a>
-                                <a href="https://talents-rh-web-front-end.vercel.app/"><Image src={LinkIconArchor} alt="" className="link-icon" /></a>
-                            </li>
-                        </ul>
-
-                    </div>
+                    
                 </motion.div>
             </section>
         </Main>
