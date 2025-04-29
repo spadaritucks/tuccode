@@ -17,7 +17,6 @@ import './page.scss'
 import Button from "@/components/button/component"
 import clientelogo1 from '../../public/dragao.png'
 import clientelogo2 from '../../public/logo.png'
-import clientelogo3 from '../../public/logo-talentsrh.png'
 import { motion } from "motion/react"
 
 export default function Home() {
@@ -93,9 +92,7 @@ export default function Home() {
           <div className="cliente-div">
             <Image className="cliente-logo" src={clientelogo2} alt="" />
           </div>
-          <div className="cliente-div">
-            <Image className="cliente-logo" src={clientelogo3} alt="" />
-          </div>
+         
         </motion.div>
       </section>
 
